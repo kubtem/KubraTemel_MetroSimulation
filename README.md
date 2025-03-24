@@ -20,47 +20,52 @@ KubraTemel_MetroSimulation/
 
 ## 🚀 How to Run the Simulation  
 1. **Clone the repository:**  
-```bash
+```
 git clone https://github.com/kubtem/KubraTemel_MetroSimulation.git
 cd KubraTemel_MetroSimulation
 ```
 
 2.	Open Jupyter Notebook:
-```bash
+```
 jupyter notebook KubraTemel_MetroSimulation.ipynb
 ```
 
 3.	Run all cells to execute the simulation and test different metro routes!
 Algorithms Used
 
-BFS for Least Transfer Route
+## BFS for Least Transfer Route
 
 • Uses queue-based traversal to explore paths level by level.
 • Prioritizes paths with the fewest line transfers rather than the shortest distance.
-A* Algorithm for Fastest Route
+
+## A* Algorithm for Fastest Route
 
 • Uses priority queues to find the most time-efficient route.
 • Heuristic-based approach for faster pathfinding.
-Example Metro Network
+
+
+### Example Metro Network
 
 Stations and connections modeled in the project:
-
+```
    (A) --5min-- (B) --7min-- (C) --3min-- (D)
     |                                     |
    10min                                 4min
     |                                     |
    (E) ----------------------------------  
-   
-Example test case:
+```
 
-```bash
+#### Example test case:
+
+```
 route = metro.find_least_transfer_route("A", "D")
 print("Least transfer route from A to D:", route)
 ```
 
-📬 Contact
+### 📬 Contact
 
 💡 Created by Kübra Temel
 📧 Email: kubra.temel@outlook.it
 🔗 GitHub: github.com/kubtem
-This project is open-source and contributions are welcome! 🚀
+
+#### This project is open-source and contributions are welcome! 🚀
